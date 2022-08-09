@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+:root{
+	--black: #111;
+	color-scheme: dark;
+	--orange: #ff5757;
+}
+body{
+	display: flex;
+	flex-direction: column;
+	font-family: 'Inconsolata';
+	margin: 0;
+	padding-top: 150px;
+}
+.title{
+	font-size: 3em;
+	white-space: nowrap;
+	border-right: 10px solid;
+	width: 14ch;
+	animation: typing 2s steps(20), blink .5s infinite step-end alternate;
+	overflow: hidden;
+}
+@keyframes typing{
+	from{width: 0;}
+} 
+@keyframes blink{
+	50%{
+		border-color: transparent;
+	}
+}
+.flex{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+.header p{
+	font-size: 1.5rem;
+	color: #ddd;
+}
+section{
+	margin: 250px 0;
+}
+p{
+	font-size: 1.1rem;
+}
+.subtitle{
+	text-align: center;
+	font-size: 2rem;
+}
+.btn{
+	background-color: var(--orange);
+	padding: 10px;
+	font-size: 1.3rem;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px #111;
+}
+img{
+	width: 300px;
+	height: 300px;
+}
+.header img{
+	border-radius: 200px;
+}
+ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+a{
+	color: #fff;
+	text-decoration: none;
+}
+.nav ul a{
+	padding: 10px;
+	font-size: 1.2rem;
+}
+.nav ul{
+	display: flex;
+}
+.hover:hover{
+	color: var(--orange);
+}
+*::selection{
+	background-color: rgba(255,87,87,255);
+}
+.nav li:hover{
+	border-bottom: 1px solid var(--orange);
+}
+.nav li:hover>a,.hover:hover>a{
+	color: var(--orange);
+}
+.nav li:first-child{
+	border-left: none;
+}
+.nav h1{
+	margin: 0;
+	padding: 0;
+}
+.nav{
+	width: 100%;
+	position: fixed;
+	top: 0px;
+	background-color: #141414;
+	padding: 10px;
+	display: flex;
+	justify-content: space-around;
+}
+.orange{
+	background-color: var(--orange);
+}
+section >div{
+	width: 400px;
+	margin-right: 50px;
+}
+section img{
+	transition:all 2s;
+	width: 400px;
+	object-fit: contain;
+}
+.paragraph{
+	text-align: center;
+	color: #ddd;
+	font-size: 2rem;
+}
+@media only screen and (min-width: 600px){
+	.header div{
+		margin-right: 50px;
+	}
+}
+.animation{
+	animation: cargar_imagen 2s;
+	animation-iteration-count: infinite;
+}
+@keyframes cargar_imagen{
+	from{
+		opacity: 0;
+	}
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,200px));
+    grid-auto-rows: 380px;    
+    grid-gap: 10px;
+
+    justify-content: center;
+}
+.card{
+	width: 100%;
+	box-shadow: 0px 0px 20px #000a;
+	padding: 20px;
+	border-radius: 5px;
+	text-align: center;
+}
+.roles p{
+	display: inline;
+	padding: 5px;
+}
+.blue{
+	background-color: #3ad;
+}
+.card img{
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+}
