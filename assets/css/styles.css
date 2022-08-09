@@ -40,7 +40,7 @@ body{
 	color: #ddd;
 }
 section{
-	margin: 250px 0;
+	margin-top: 200px;
 }
 p{
 	font-size: 1.1rem;
@@ -48,6 +48,7 @@ p{
 .subtitle{
 	text-align: center;
 	font-size: 2rem;
+	margin-bottom: 30px;
 }
 .btn{
 	background-color: var(--orange);
@@ -148,7 +149,7 @@ section img{
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(300px,200px));
     grid-auto-rows: 380px;    
-    grid-gap: 10px;
+    grid-gap: 70px;
 
     justify-content: center;
 }
@@ -170,4 +171,19 @@ section img{
 	border-radius: 50%;
 	width: 200px;
 	height: 200px;
+}
+.more-text{
+	text-align: center;
+	margin: 10px;
+	font-size: 1.4rem;
+}
+.footer{
+	border-top: 1px solid #333;
+	text-align: center;
+	padding: 20px 0;
+	margin-top: 30px;
+}
+.contacto img{
+	width: 300px;
+	height: 250px;
 }
