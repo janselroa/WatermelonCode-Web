@@ -2,7 +2,7 @@
 la web oficial de <a href="https://watermeloncodecomunity.netlify.app/">watermeloncode</a> comunity 
 <h2>¿Que es watermelon Code?</h2>
 
-<img src="./preview.png" style="text-align:center;width:200px;margin:auto;">
+<img src="./preview.png">
 <p>
 Comunidad de programadores destinada al ambito de la informática y la programación, en este grupo encontraras ayuda de gente experimentada, podrás aprender diariamente nuevas cosas, enfretarte a desafios, estar en talleres y participar de proyectos comunitarios.
 
