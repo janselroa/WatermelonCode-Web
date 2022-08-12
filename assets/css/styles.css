@@ -120,7 +120,6 @@ a{
 }
 section >div{
 	width: 400px;
-	margin-right: 50px;
 }
 section img{
 	transition:all 2s;
@@ -193,6 +192,9 @@ section img{
     /*Desktop*/
     .menu-icons{
         display:none;
+    }
+    section>div{
+        margin-right:50px;
     }
 }
 @media only screen and (max-width:600px){
