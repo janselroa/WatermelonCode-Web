@@ -1,0 +1,5 @@
+const menuBtn = document.querySelector(".menu-btn")
+const closeBtn = document.querySelector(".close-btn")
+const menu = document.querySelector(".nav ul")
+menuBtn.addEventListener("click",()=>menu.classList.toggle("showMenu"))
+closeBtn.addEventListener("click",()=>menu.classList.remove("showMenu"))
