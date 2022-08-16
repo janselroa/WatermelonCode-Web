@@ -5,7 +5,7 @@
   "embeddedLanguageFormatting": "auto",
   "htmlWhitespaceSensitivity": "strict",
   "insertPragma": false,
-  "jsxSingleQuote": false,
+  "jsxSingleQuote": true,
   "printWidth": 100,
   "proseWrap": "preserve",
   "quoteProps": "as-needed",
