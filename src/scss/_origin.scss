@@ -69,10 +69,12 @@ section>h2 {
 }
 
 section a {
-    display: block;
+    display: flex;
     width: 250px;
     margin: 30px auto;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
 }
 
 .icon {
@@ -134,51 +136,6 @@ ul {
 a {
     color: #fff;
     text-decoration: none;
-}
-
-.nav ul a {
-    padding: 10px;
-    font-size: 1.2rem;
-}
-
-.nav ul {
-    display: flex;
-}
-
-.hover:hover {
-    color: var(--orange);
-}
-
-*::selection {
-    background-color: rgba(255, 87, 87, 255);
-}
-
-.nav li:hover {
-    border-bottom: 1px solid var(--orange);
-}
-
-.nav li:hover>a,
-.hover:hover>a {
-    color: var(--orange);
-}
-
-.nav li:first-child {
-    border-left: none;
-}
-
-.nav h1 {
-    margin: 0;
-    padding: 0;
-}
-
-.nav {
-    width: 100%;
-    position: fixed;
-    top: 0px;
-    background-color: #141414;
-    padding: 10px;
-    display: flex;
-    justify-content: space-around;
 }
 
 .green {
@@ -273,66 +230,6 @@ section img {
 .contacto img {
     width: 300px;
     height: 250px;
-}
-
-/*Responsive*/
-@media only screen and (min-width:600px) {
-
-    /*Desktop*/
-    .menu-icons {
-        display: none;
-    }
-
-    section>div {
-        margin-right: 50px;
-    }
-}
-
-@media only screen and (max-width:600px) {
-
-    /*Mobile*/
-    .menu-icons {
-        display: block;
-        width: 30px;
-        height: 30px;
-        cursor: pointer;
-    }
-
-    .nav ul {
-        flex-direction: column;
-        background-color: #111;
-        box-shadow: -200px 0px 200px #000a;
-        height: 100vh;
-        position: absolute;
-        right: 0;
-        top: 0;
-        z-index: 20;
-        padding: 20px;
-        width: 200px;
-        display: none;
-    }
-
-    .menu-btn {
-        width: 40px;
-        height: 40px;
-        margin-top: -5px;
-    }
-
-    .nav li {
-        margin-top: 15px;
-    }
-
-    .showMenu {
-        display: flex !important;
-    }
-
-    .header img {
-        margin-top: 50px;
-    }
-
-    body {
-        text-align: center;
-    }
 }
 
 section h2 {

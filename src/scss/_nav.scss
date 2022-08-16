@@ -1,0 +1,45 @@
+
+.nav ul a {
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+.nav ul {
+    display: flex;
+}
+
+.hover:hover {
+    color: var(--orange);
+}
+
+*::selection {
+    background-color: rgba(255, 87, 87, 255);
+}
+
+.nav li:hover {
+    border-bottom: 1px solid var(--orange);
+}
+
+.nav li:hover>a,
+.hover:hover>a {
+    color: var(--orange);
+}
+
+.nav li:first-child {
+    border-left: none;
+}
+
+.nav h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    background-color: #141414;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}

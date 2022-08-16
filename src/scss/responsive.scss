@@ -1,0 +1,60 @@
+
+/*Responsive*/
+@media only screen and (min-width:600px) {
+
+    /*Desktop*/
+    .menu-icons {
+        display: none;
+    }
+
+    section>div {
+        margin-right: 50px;
+    }
+}
+
+@media only screen and (max-width:600px) {
+
+    /*Mobile*/
+    .menu-icons {
+        display: block;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        background-color: #111;
+        box-shadow: -200px 0px 200px #000a;
+        height: 100vh;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 20;
+        padding: 20px;
+        width: 200px;
+        display: none;
+    }
+
+    .menu-btn {
+        width: 40px;
+        height: 40px;
+        margin-top: -5px;
+    }
+
+    .nav li {
+        margin-top: 15px;
+    }
+
+    .showMenu {
+        display: flex !important;
+    }
+
+    .header img {
+        margin-top: 50px;
+    }
+
+    body {
+        text-align: center;
+    }
+}
