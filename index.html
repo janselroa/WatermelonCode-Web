@@ -1,147 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta property="og:title" content="WatermelonCode" />
-    <meta
-      property="og:image"
-      content="https://watermeloncodecomunity.netlify.app/assets/img/logo.png" />
-    <meta
-      property="og:description"
-      content="Watermelon Code es una comunidad de programadores enfocada a la programacion, unete y aprende con nosotros" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./src/assets/img/icon.png" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <title>Watermelon Code</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;500;700&display=swap"
-      rel="stylesheet" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  </head>
 
-  <body>
-    {{> nav }}
-    <header class="header flex">
-      <div>
-        <h2 class="title" data-aos="fade-right">WatermelonCode</h2>
-        <p>Comunidad de programadores</p>
-        <a class="btn" target="_blank" href="https://discord.gg/gCm3KkwBAG">Unete a nosotros</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta property="og:title" content="WatermelonCode" />
+  <meta property="og:image" content="https://watermeloncodecomunity.netlify.app/assets/img/logo.png" />
+  <meta property="og:description"
+    content="Watermelon Code es una comunidad de programadores enfocada a la programacion, unete y aprende con nosotros" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="./src/assets/img/icon.png" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <title>Watermelon Code</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;500;700&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+
+  <nav class="nav">
+    <img src="./src/assets/img/menu-icon.png" class="menu-icons nav__btn" />
+    <a href="/">
+      <h1 class="nav__title">WatermelonCode</h1>
+    </a>
+    <ul>
+      <img src="./src/assets/img/close-icon.png" class="menu-icons close-btn" />
+      <li class="nav__item"><a class="nav__link" href="#">Inicio</a></li>
+      <li class="nav__item"><a class="nav__link" href="#talleres">Eventos</a></li>
+      <li class="nav__item"><a class="nav__link" href="#comunidad">Comunidad</a></li>
+      <li class="nav__item"><a class="nav__link" href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <header class="header">
+    <div>
+      <h2 class="title" data-aos="fade-right">WatermelonCode</h2>
+      <p>Comunidad de programadores</p>
+      <a class="btn" target="_blank" href="https://discord.gg/gCm3KkwBAG">Unete a nosotros</a>
+    </div>
+    <img data-aos="fade-up" src="./src/assets/img/logo.png" alt="watermeloncode" />
+  </header>
+
+  <section class="article">
+    <div>
+      <h2 class="subtitle" data-aos="fade-left">¿Quiénes somos?</h2>
+      <p>Somos una comunidad destinada al ambito de la informática y la programación, en este
+        grupo encontraras ayuda de gente experimentada, podrás aprender diariamente nuevas cosas,
+        enfretarte a desafios, estar en talleres y participar de proyectos comunitarios.
+      </p>
+      <p>
+        Watermelon Code esta dispuesto a ayudar a todo tipo de desarrolladores, sin importar sus
+        creencias o preferencias.
+      </p>
+    </div>
+    <img class="image1" data-aos="fade-up" src="./src/assets/img/1.png" />
+  </section>
+
+  <section class="article" id="talleres">
+    <div>
+      <h2 class="subtitle" data-aos="fade-right">Que hacemos</h2>
+      <p>En nuestro servidor organizamos multitud de eventos cosas como talleres, competiciones,
+        charlas o incluso torneos informales de programacion son frecuentes en el servidor</p>
+    </div>
+    <img src="./src/assets/img/image5.png" data-aos="fade-up" class="image2" />
+  </section>
+
+  <!--  TODO: Refactorizar esta sección, hacerla dinámica con ts -->
+  <section id="comunidad">
+    <h2 class="subtitle">El Staff</h2>
+    <article class="grid" id="grid">
+      <div class="card" data-aos="fade-right">
+        <img src="./src/assets/img/profiles/fran.png" alt="fran" />
+        <h2>Fran</h2>
+        <p>Programador Competitivo y Desarrollador Web</p>
+        <div class="roles">
+          <p class="orange">Founder</p>
+          <p class="blue">Admin</p>
+        </div>
       </div>
-      <img data-aos="fade-up" src="./src/assets/img/logo.png" alt="watermeloncode" />
-    </header>
-    <section class="flex">
-      <div>
-        <h2 class="subtitle" data-aos="fade-left">¿Quienes somos?</h2>
-        <p
-          >Somos una comunidad destinada al ambito de la informática y la programación, en este
-          grupo encontraras ayuda de gente experimentada, podrás aprender diariamente nuevas cosas,
-          enfretarte a desafios, estar en talleres y participar de proyectos comunitarios.
-        </p>
-        <p>
-          Watermelon Code esta dispuesto a ayudar a todo tipo de desarrolladores, sin importar sus
-          creencias o preferencias.
-        </p>
+      <div class="card" data-aos="fade-right">
+        <img src="./src/assets/img/profiles/echisero.png" alt="ElEchisero" />
+        <h2>ElEchisero</h2>
+        <p>Programador aficionado y desarrollador movil</p>
+        <div class="roles">
+          <p class="red">Admin</p>
+        </div>
       </div>
-      <img class="image1" data-aos="fade-up" src="./src/assets/img/1.png" />
-    </section>
-    <section id="talleres" class="flex white">
-      <div>
-        <h2 class="subtitle" data-aos="fade-right">Que hacemos</h2>
-        <p
-          >En nuestro servidor organizamos multitud de eventos cosas como talleres, competiciones,
-          charlas o incluso torneos informales de programacion son frecuentes en el servidor</p
-        >
+      <div class="card" data-aos="fade-up">
+        <img src="./src/assets/img/profiles/teo.png" alt="teo" />
+        <h2>Teo</h2>
+        <p>Dev Versátil && Creador de DPM</p>
+        <div class="roles">
+          <p class="orange">Mod</p>
+        </div>
       </div>
-      <img src="./src/assets/img/image5.png" data-aos="fade-up" class="image2" />
-    </section>
-    <section id="comunidad">
-      <h2 class="subtitle">El Staff</h2>
-      <article class="grid" id="grid">
-        <div class="card" data-aos="fade-right">
-          <img src="./src/assets/img/profiles/fran.png" alt="fran" />
-          <h2>Fran</h2>
-          <p>Programador Competitivo y Desarrollador Web</p>
-          <div class="roles">
-            <p class="orange">Founder</p>
-            <p class="blue">Admin</p>
-          </div>
-        </div>
-        <div class="card" data-aos="fade-right">
-          <img src="./src/assets/img/profiles/echisero.png" alt="ElEchisero" />
-          <h2>ElEchisero</h2>
-          <p>Programador aficionado y desarrollador movil</p>
-          <div class="roles">
-            <p class="red">Admin</p>
-          </div>
-        </div>
-        <div class="card" data-aos="fade-up">
-          <img src="./src/assets/img/profiles/teo.png" alt="teo" />
-          <h2>Teo</h2>
-          <p>Dev Versátil && Creador de DPM</p>
-          <div class="roles">
-            <p class="orange">Mod</p>
-          </div>
-        </div>
 
-        <div class="card" data-aos="fade-up">
-          <img src="./src/assets/img/profiles/thadeuks.webp" alt="thadeuks" />
-          <h2>thadeuks</h2>
-          <p>Programador && pythonista</p>
-          <div class="roles">
-            <p class="orange">Mentor</p>
-            <p class="green">Helper</p>
-          </div>
+      <div class="card" data-aos="fade-up">
+        <img src="./src/assets/img/profiles/thadeuks.webp" alt="thadeuks" />
+        <h2>thadeuks</h2>
+        <p>Programador && pythonista</p>
+        <div class="roles">
+          <p class="orange">Mentor</p>
+          <p class="green">Helper</p>
         </div>
+      </div>
 
-        <div class="card" data-aos="fade-right">
-          <img src="./src/assets/img/profiles/emma.png" alt="JustPablo" />
-          <h2>Emma</h2>
-          <p>Programador aficionado && Full dtack dev</p>
-          <div class="roles">
-            <p class="orange">Mentor</p>
-            <p class="green">Helper</p>
-          </div>
+      <div class="card" data-aos="fade-right">
+        <img src="./src/assets/img/profiles/emma.png" alt="JustPablo" />
+        <h2>Emma</h2>
+        <p>Programador aficionado && Full dtack dev</p>
+        <div class="roles">
+          <p class="orange">Mentor</p>
+          <p class="green">Helper</p>
         </div>
+      </div>
 
-        <div class="card" data-aos="fade-right">
-          <img src="./src/assets/img/profiles/wilver.png" alt="wilver" />
-          <h2>Wilver - Zephyro</h2>
-          <p>Programador aficionado</p>
-          <div class="roles">
-            <p class="orange">Mod</p>
-          </div>
+      <div class="card" data-aos="fade-right">
+        <img src="./src/assets/img/profiles/wilver.png" alt="wilver" />
+        <h2>Wilver - Zephyro</h2>
+        <p>Programador aficionado</p>
+        <div class="roles">
+          <p class="orange">Mod</p>
         </div>
-      </article>
-      <a href="./equipo.html" class="btn"
-        >Ver todo el equipo
-        <img src="./src/assets/img/arroy-right.png" class="icon" alt="arroy-right"
-      /></a>
-    </section>
-    <section id="contacto">
-      <h2 class="subtitle">Puedes unirte a nosotros</h2>
-      <article class="grid contacto">
-        
-        <a href="https://discord.com/invite/dzsa2PG6Cw" target="_blank">
-          <img data-aos="fade-up" src="./src/assets/img/discord.jpg" alt="discord" />
-        </a>
-        
-        <a href="https://www.youtube.com/channel/UCZUWcjMU-uWhmbO9RbsREgg" target="_blank">
-          <img data-aos="fade-right" src="./src/assets/img/youtube.webp" alt="youtube" />
-        </a>
-        
-        <a href="https://mobile.twitter.com/watermelon_code" target="_blank">
-          <img data-aos="fade-right" src="./src/assets/img/twitter.jpg" alt="twitter" />
-        </a>
-      </article>
-    </section>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init()
-    </script>
-    {{> footer }}
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+      </div>
+    </article>
+    <a href="./equipo.html" class="btn">Ver todo el equipo
+      <img src="./src/assets/img/arroy-right.png" class="icon" alt="arroy-right" /></a>
+  </section>
+
+  <section id="contacto">
+    <h2 class="subtitle">Puedes unirte a nosotros</h2>
+    <article class="grid contacto">
+      <a href="https://www.youtube.com/channel/UCZUWcjMU-uWhmbO9RbsREgg" target="_blank">
+        <img data-aos="fade-right" src="./src/assets/img/discord.jpg" alt="discord" />
+      </a>
+      <a href="https://mobile.twitter.com/watermelon_code" target="_blank">
+        <img data-aos="fade-right" src="./src/assets/img/youtube.webp" alt="youtube" />
+      </a>
+      <a href="https://discord.com/invite/dzsa2PG6Cw" target="_blank">
+        <img data-aos="fade-up" src="./src/assets/img/twitter.jpg" alt="twiiter" />
+      </a>
+    </article>
+  </section>
+  <footer class="footer">
+    <h2>WatermelonCode 2022 - 2023 &copy</h2>
+    <p>Hecho por <a href="https://github.com/janselroa">Jansel Roa</a> para la comunidad</p>
+  </footer>
+  <script type="module" src="/src/main.ts"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init()
+  </script>
+</body>
+
 </html>
