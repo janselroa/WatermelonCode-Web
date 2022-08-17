@@ -1,8 +1,8 @@
 @forward 'normalize';
 @forward 'origin';
-@forward 'nav';
-@forward 'responsive';
+@forward 'media-queries';
+@forward 'keyframes';
 
-body {
-    font-family: 'Inconsolata';
+:root {
+    color-scheme: dark;
 }
