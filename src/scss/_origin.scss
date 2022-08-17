@@ -1,22 +1,11 @@
+@use 'variables'as vars;
+@use 'mixins'as mix;
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
 
-:root {
-    --black: #111;
-    color-scheme: dark;
-    --orange: #ff5757;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    font-family: 'Inconsolata';
-    margin: 0;
-    padding-top: 150px;
-    overflow-x: hidden;
-}
+// TODO: REFACTOR SCSS
 
 .title {
-    font-size: 3em;
+    font-size: calc(2rem + 1vmin);
     white-space: nowrap;
     border-right: 10px solid;
     width: 14ch;
@@ -24,24 +13,18 @@ body {
     overflow: hidden;
 }
 
-@keyframes typing {
-    from {
-        width: 0;
-    }
+.article {
+    @include mix.flex(center, center, row);
 }
 
-@keyframes blink {
-    50% {
-        border-color: transparent;
-    }
-}
+.header {
+    @include mix.flex(center, center, row);
+    margin-top: 150px;
+    margin-bottom: 150px;
 
-.flex {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    .title {
+        box-sizing: content-box;
+    }
 }
 
 .header p {
@@ -51,6 +34,7 @@ body {
 
 section {
     margin-top: 200px;
+    margin-bottom: 200px;
 }
 
 p {
@@ -69,12 +53,10 @@ section>h2 {
 }
 
 section a {
-    display: flex;
+    display: block;
     width: 250px;
     margin: 30px auto;
-    justify-content: center;
-    align-items: center;
-    height: 30px;
+    text-align: center;
 }
 
 .icon {
@@ -111,11 +93,11 @@ section a {
 }
 
 .btn {
-    background-color: var(--orange);
+    background-color: vars.$orange;
     padding: 10px;
     font-size: 1.3rem;
     border-radius: 5px;
-    box-shadow: 0px 0px 5px #111;
+    box-shadow: vars.$shadow-1;
 }
 
 img {
@@ -138,16 +120,41 @@ a {
     text-decoration: none;
 }
 
-.green {
-    background-color: #0d0a;
+.nav ul a {
+    padding: 10px;
+    font-size: 1.2rem;
 }
 
-.red {
-    background-color: #d11;
+.nav ul {
+    display: flex;
 }
 
-.orange {
-    background-color: var(--orange);
+.nav li:hover {
+    border-bottom: 1px solid vars.$orange;
+}
+
+.nav li:hover>a,
+.hover:hover>a {
+    color: vars.$orange;
+}
+
+.nav li:first-child {
+    border-left: none;
+}
+
+.nav h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    background-color: #141414;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
 }
 
 section>div {
@@ -166,21 +173,9 @@ section img {
     font-size: 2rem;
 }
 
-@media only screen and (min-width: 600px) {
-    .header div {
-        margin-right: 50px;
-    }
-}
-
 .animation {
     animation: cargar_imagen 2s;
     animation-iteration-count: infinite;
-}
-
-@keyframes cargar_imagen {
-    from {
-        opacity: 0;
-    }
 }
 
 .grid {
@@ -188,7 +183,6 @@ section img {
     grid-template-columns: repeat(auto-fill, minmax(300px, 200px));
     grid-auto-rows: 380px;
     grid-gap: 70px;
-
     justify-content: center;
 }
 
