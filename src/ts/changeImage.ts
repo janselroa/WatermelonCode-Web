@@ -1,3 +1,7 @@
+// TODO: change types
+
+// TODO: compress the images (are so big)
+
 export const changeImage = (element: any, images: string[]): void => {
   console.log(element)
 
@@ -8,8 +12,7 @@ export const changeImage = (element: any, images: string[]): void => {
       element.classList.remove('animation')
     }, 500)
     if (i >= images.length) i = 0
-    import(`../assets/img/${images[i]}`).then(data=>console.log(data))
-    //element.src = `./src/assets/img/${images[i]}`
+    element.src = `./src/assets/img/${images[i]}`
     i += 1
   }, 5000)
 }
