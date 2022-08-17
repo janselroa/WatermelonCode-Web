@@ -1,11 +1,11 @@
-@use 'variables'as vars;
-@use 'mixins'as mix;
+@use 'variables' as vars;
+@use 'mixins' as mix;
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
 
 // TODO: REFACTOR SCSS
 
 .title {
-    font-size: calc(2rem + 1vmin);
+    font-size: calc(1rem + 4vmin);
     white-space: nowrap;
     border-right: 10px solid;
     width: 14ch;
@@ -38,12 +38,12 @@ section {
 }
 
 p {
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .subtitle {
     text-align: center;
-    font-size: 2rem;
+    font-size: calc(1.7rem + 3vmin);
     margin-bottom: 30px;
 }
 
@@ -109,17 +109,6 @@ img {
     border-radius: 200px;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-a {
-    color: #fff;
-    text-decoration: none;
-}
-
 .nav ul a {
     padding: 10px;
     font-size: 1.2rem;
@@ -163,8 +152,8 @@ section>div {
 
 section img {
     transition: all 2s;
-    width: 400px;
-    object-fit: contain;
+    object-fit: cover;
+    flex-basis: 30%;
 }
 
 .paragraph {
