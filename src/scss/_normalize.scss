@@ -1,7 +1,19 @@
+@use 'variables'as vars;
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
    ========================================================================== */
+
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+*::selection {
+    background-color: vars.$orange;
+}
 
 /**
  * 1. Correct the line height in all browsers.
@@ -24,6 +36,7 @@ html {
 
 body {
     margin: 0;
+    font-family: 'Inconsolata';
 }
 
 /**

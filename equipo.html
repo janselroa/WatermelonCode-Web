@@ -11,7 +11,21 @@
   </head>
 
   <body>
-    {{> nav }}
+    <nav class="nav">
+      <img src="./src/assets/img/menu-icon.png" class="menu-icons nav__btn" />
+      <a href="/">
+        <h1 class="hover">WatermelonCode</h1>
+      </a>
+      <ul>
+        <img
+          src="./src/assets/img/close-icon.png"
+          class="menu-icons close-btn" />
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#talleres">Eventos</a></li>
+        <li><a href="#comunidad">Comunidad</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
     <section class="container-equipo">
       <h2 class="subtitle">Comunidad</h2>
       <div class="counter">
@@ -76,7 +90,13 @@
     <script>
       AOS.init()
     </script>
-    {{> footer }}
+    <footer class="footer">
+      <h2>WatermelonCode 2022 - 2023 &copy</h2>
+      <p
+        >Hecho por <a href="https://github.com/janselroa">Jansel Roa</a> para la
+        comunidad</p
+      >
+    </footer>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>

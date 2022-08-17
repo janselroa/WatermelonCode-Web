@@ -1,0 +1,17 @@
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@keyframes cargar_imagen {
+    from {
+        opacity: 0;
+    }
+}
