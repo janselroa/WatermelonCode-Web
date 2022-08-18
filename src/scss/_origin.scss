@@ -98,6 +98,10 @@ section a {
     font-size: 1.3rem;
     border-radius: 5px;
     box-shadow: vars.$shadow-1;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    // justify-content: center; // Or maybe it could be dynamic
 }
 
 img {
@@ -210,9 +214,16 @@ section img {
     margin-top: 30px;
 }
 
-.contacto img {
-    width: 300px;
-    height: 250px;
+.contacto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+    img {
+        width: 280px;
+        height: 250px;
+    }
 }
 
 section h2 {

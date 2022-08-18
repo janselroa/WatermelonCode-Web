@@ -4,7 +4,6 @@ import { changeImage } from './ts/changeImage'
 import { mobileNav } from './ts/navLogic'
 import { animationInMobile } from './ts/subtitleAnimationsInMobile'
 
-//countEffect()
 changeImage(document.querySelector<any>('.image1'), ['logo.png', 'image.png', 'image2.png'])
 changeImage(document.querySelector<any>('.image2'), [
   'image3.png',
