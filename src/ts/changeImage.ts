@@ -12,7 +12,6 @@ export const changeImage = (element: any, images: string[]): void => {
       element.classList.remove('animation')
     }, 500)
     if (i >= images.length) i = 0
-    element.src = `./src/assets/img/${images[i]}`
-    i += 1
+    element.src = `../assets/img/${images[i]}`
   }, 5000)
 }
