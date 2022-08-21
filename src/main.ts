@@ -1,9 +1,15 @@
 import './scss/index.scss'
-import { changeImage } from './ts/changeImage'
-//import { countEffect } from './ts/countEffect'
-import { mobileNav } from './ts/navLogic'
-import { animationInMobile } from './ts/subtitleAnimationsInMobile'
+import { changeImage, mobileNav, animationInMobile, countEffect } from './ts/index'
 
+animationInMobile()
+mobileNav()
+//countEffect()
+changeImage(document.querySelector<HTMLImageElement>('.image1'), [
+  'logo.png',
+  'image.png',
+  'image2.png',
+])
+changeImage(document.querySelector<HTMLImageElement>('.image2'), [
 changeImage(document.querySelector<any>('.image1'), ['logo.png', 'image.png', 'image2.png'])
 changeImage(document.querySelector<any>('.image2'), [
   'image3.png',
@@ -11,6 +17,3 @@ changeImage(document.querySelector<any>('.image2'), [
   'taller1.png',
   'image5.png',
 ])
-
-mobileNav()
-animationInMobile()
