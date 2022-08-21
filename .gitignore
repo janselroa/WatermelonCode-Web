@@ -7,6 +7,11 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+## You should ignore the lock file, in case someone wants to use another package manager
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
 node_modules
 dist
 dist-ssr
