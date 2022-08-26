@@ -1,11 +1,29 @@
 export function countEffect(): void {
-  const counter: HTMLElement = document.querySelector<HTMLElement>('.miembros') as HTMLElement
-  let contador = 1000
-  const interval = setInterval(() => {
-    contador++
-    counter.textContent = contador.toString()
-    if (contador > 1250) {
-      clearInterval(interval)
-    }
-  }, 0)
+  const elements = [{
+    selector:".miembros",
+    maxNumber:1260,
+    initialNumber:1000
+  },
+  {
+    selector:".helpers",
+    maxNumber:20,
+    initialNumber:1
+  }
+  ,{
+    selector:".eventos",
+    maxNumber:25,
+    initialNumber:2
+  }
+  ]
+  for(let element of elements){
+    const counter: HTMLElement = document.querySelector<HTMLElement>(element.selector) as HTMLElement
+    let contador = element.initialNumber
+    const interval = setInterval(() => {
+      contador++
+      counter.textContent = `+${contador.toString()}`
+      if (contador > element.maxNumber) {
+        clearInterval(interval)
+      }
+    }, 0)
+  }
 }

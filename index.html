@@ -79,7 +79,25 @@
     </div>
     <img src="./src/assets/img/image5.png" data-aos="fade-up" class="image2" alt="Rice Competition" loading="lazy" />
   </section>
+  <h2 class="subtitle aos-animate aos-init">Comunidad</h2>
+  <div class="counter">
+      <div>
+        <img src="./src/assets/img/people.png" class="icon" alt="miembros" />
+        <h2>Miembros</h2>
+        <p class="miembros">0</p>
+      </div>
+      <div>
+        <img src="./src/assets/img/mentor.png" class="icon" alt="mentores" />
+        <h2>Mentores</h2>
+        <p class="helpers">0</p>
+      </div>
 
+      <div>
+        <img src="./src/assets/img/talleres.png" class="icon" alt="talleres" />
+        <h2>Talleres</h2>
+        <p class="eventos">0</p>
+      </div>
+    </div>
   <!--  TODO: Refactorizar esta sección, hacerla dinámica con ts -->
   <section id="comunidad">
     <h2 class="subtitle aos-animate aos-init">El Staff</h2>
@@ -119,6 +137,15 @@
           <p class="green">Helper</p>
         </div>
       </div>
+      <div class="card" data-aos="fade-right">
+        <img src="./src/assets/img/profiles/jansel.jpg" alt="Jansel" loading="lazy" />
+        <h2>Jansel</h2>
+        <p>Programador aficionado y FullStack developer</p>
+        <div class="roles">
+          <p class="blue">Dev of month</p>
+          <p class="orange">Mentor</p>
+        </div>
+      </div>
 
       <div class="card" data-aos="fade-right">
         <img src="./src/assets/img/profiles/emma.png" alt="JustPablo" loading="lazy" />
@@ -139,14 +166,11 @@
         </div>
       </div>
     </article>
-    <a href="./equipo.html" class="btn">Ver todo el equipo
-      <img src="./src/assets/img/arroy-right.png" class="icon" alt="arroy-right" loading="lazy" /></a>
   </section>
 
   <section id="contacto">
-    <h2 class="subtitle">Puedes unirte a nosotros</h2>
+    <h2 class="subtitle  aos-animate aos-init"  data-aos="fade-up">Puedes unirte a nosotros</h2>
     <article class="contacto">
-      <h2 class="subtitle aos-animate aos-init">Puedes unirte a nosotros</h2>
       <a href="https://www.youtube.com/channel/UCZUWcjMU-uWhmbO9RbsREgg" target="_blank">
         <img data-aos="fade-right" src="./src/assets/img/discord.jpg" alt="discord" loading="lazy" />
       </a>
@@ -167,6 +191,7 @@
   <script>
     AOS.init()
   </script>
+  <script type="module" src="./src/ts/countEffect.ts"></script>
 </body>
 
 </html>

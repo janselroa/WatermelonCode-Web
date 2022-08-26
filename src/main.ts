@@ -1,6 +1,6 @@
 import './scss/index.scss'
 import { changeImage } from './ts/changeImage'
-//import { countEffect } from './ts/countEffect'
+import { countEffect } from './ts/countEffect'
 import { mobileNav } from './ts/navLogic'
 import { animationInMobile } from './ts/subtitleAnimationsInMobile'
 
@@ -14,3 +14,11 @@ changeImage(document.querySelector<any>('.image2'), [
 
 mobileNav()
 animationInMobile()
+let options = {
+  root: null,
+  rootMargin: '0px',
+  threshold: 1.0
+}
+const counterDiv = document.querySelector(".counter")
+let observer = new IntersectionObserver(countEffect, options);
+observer.observe(counterDiv)
