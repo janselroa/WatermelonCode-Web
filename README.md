@@ -17,5 +17,5 @@ En nuestro servidor organizamos multitud de eventos cosas como talleres, competi
 <br>
 <hr>
 <p style="padding:10px">
-  <strong>Hecho por Jansel Roa y Emmanuel Granados &copy 2022 - 2023</string>
+  <strong>Hecho por la comunidad, para la comunidad &copy 2022 - 2023</string>
 </p>
