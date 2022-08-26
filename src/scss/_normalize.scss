@@ -36,6 +36,7 @@ html {
 
 body {
     margin: 0;
+    overflow-x: hidden;
     font-family: 'Inconsolata';
 }
 
@@ -400,4 +401,8 @@ ul {
 a {
     color: #fff;
     text-decoration: none;
+}
+
+:root {
+    color-scheme: dark;
 }
