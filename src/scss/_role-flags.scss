@@ -1,0 +1,19 @@
+@use 'variables' as vars;
+
+.role {
+  display: inline;
+  border-radius: 5px;
+  padding: .2em .5em;
+  &--green{
+    background-color: vars.$green;
+  }
+  &--orange{
+    background-color: vars.$orange;
+  }
+  &--blue{
+    background-color: vars.$blue;
+  }
+  &--red{
+    background-color: vars.$red;
+  }
+}
