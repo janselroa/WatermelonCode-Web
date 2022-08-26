@@ -19,6 +19,6 @@ let options = {
   rootMargin: '0px',
   threshold: 1.0
 }
-const counterDiv = document.querySelector(".counter")
+const counterDiv = document.querySelector<HTMLElement>(".counter") as HTMLElement
 let observer = new IntersectionObserver(countEffect, options);
 observer.observe(counterDiv)
