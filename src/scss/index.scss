@@ -2,10 +2,5 @@
 @forward 'origin';
 @forward 'media-queries';
 @forward 'keyframes';
-body{
-    margin: 0;
-    overflow-x: hidden;
-}
-:root {
-    color-scheme: dark;
-}
+@forward 'role-flags';
+
